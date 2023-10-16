@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age of Fall MMORPG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{{ url_for('static', filename='images/bg.jpg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 300px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>MMORPG в жанре фэнтези</h1>
+        <p>
+            MMORPG (Massively Multiplayer Online Role-Playing Game) в жанре фэнтези - это захватывающий мир, полный волшебства, монстров и приключений.
+            В этой игре вы сможете отправиться в удивительное путешествие, исследовать мир, участвовать в эпических битвах и взаимодействовать с другими игроками.
+            Откройте для себя новые земли, научитесь магии и станьте настоящим героем фэнтезийного мира!
+                <div> </div>
+            <a href = "{{ url_for('choose') }}"><button type="button" class="btn btn-warning">Начать играть</button></a>
+        </p>
+    </div>
+</body>
+</html>
+{% endblock %}

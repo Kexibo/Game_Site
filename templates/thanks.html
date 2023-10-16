@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Спасибо</title>
+    <style>
+        .content {
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 300px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="h1">
+        Спасибо за обращение
+    </div>
+    <div class="p">
+        <a href="{{ url_for('index') }}">
+            <button type="button" class="btn btn-warning">Вернуться на главную</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,53 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/signin.css') }}">
+<meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="></head>
+<body>
+
+
+<div id="bg"></div>
+<form action="/signin", method="post">
+<div class="form-field">
+<input type="email" name="username" placeholder="Email" required="">
+</div>
+<div class="form-field">
+<input type="password" name="password" placeholder="Password" required=""> </div>
+<div class="form-field">
+<button class="btn" type="submit">Log in</button>
+{% with messages = get_flashed_messages()%}
+{% if messages %}
+{% for message in messages %}
+<h5>{{ message }}</h5>
+{% endfor %}
+{% endif %}
+{% endwith %}
+</div>
+</form>
+
+
+<script src="https://partner.googleadservices.com/gampad/cookie.js?domain=www.codehim.com&amp;callback=_gfp_s_&amp;client=ca-pub-8329113460419074"></script><script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202309130101/show_ads_impl_fy2021.js?bust=31077890" id="google_shimpl"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-80520768-2" type="text/javascript"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80520768-2');
+</script>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8329113460419074" crossorigin="anonymous" type="text/javascript" data-checked-head="true"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8329113460419074" data-ad-slot="2986786685" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"></ins>
+<script type="text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2BMVGTJJG1" type="text/javascript"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2BMVGTJJG1');
+</script>
+
+<ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important;" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_0_host" style="border: medium none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-8329113460419074&amp;output=html&amp;adk=1812271804&amp;adf=1573534164&amp;lmt=1687858535&amp;plat=1%3A16777216%2C2%3A16777216%2C3%3A16%2C4%3A16%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fwww.codehim.com%2Fdemo%2Flogin-page-with-background-image%2F&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1&amp;dt=1694701900384&amp;bpp=5&amp;bdt=1236&amp;idt=450&amp;shv=r20230912&amp;mjsv=m202309130101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=7877414560175&amp;frm=20&amp;pv=2&amp;ga_vid=583687707.1694701900&amp;ga_sid=1694701901&amp;ga_hid=833694324&amp;ga_fc=1&amp;u_tz=180&amp;u_his=1&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1053&amp;u_aw=1850&amp;u_cd=24&amp;u_sd=1&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1850&amp;bih=968&amp;scr_x=0&amp;scr_y=0&amp;eid=44759842%2C44759926%2C44759875%2C31077704%2C44795921%2C31077890&amp;oid=2&amp;pvsid=2318725786676078&amp;tmod=220851397&amp;nvt=1&amp;fsapi=1&amp;ref=https%3A%2F%2Fjazz.sber.ru%2F&amp;fc=1920&amp;brdim=70%2C27%2C70%2C27%2C1850%2C27%2C1850%2C1053%2C1850%2C968&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=464" data-google-container-id="a!1" data-load-complete="true" frameborder="0"></iframe></div></ins></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230912/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>

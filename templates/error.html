@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ошибка(</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{{ url_for('static', filename='images/bg_error.jpeg') }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 300px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        h5 {
+            font-size: 8px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="h1">
+        Простите, у нас какая-то ошибка.
+    </div>
+    <div class="h5">
+        Мы уже занимаемся ей
+    </div>
+    <br>
+    <div class="p">
+        <a href="{{ url_for('contact') }}">
+            <button type="button" class="btn btn-warning">Расскажите о проблеме</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}
