@@ -1,22 +1,24 @@
 from flask import Flask, render_template, url_for, request, redirect, make_response, session, flash, render_template_string
-from werkzeug.security import generate_password_hash, check_password_hash
 import hashlib
 from time import sleep
 import os
 from flask_mail import Mail, Message
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from models import User, db
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'SosAllowMyMindMinecraftHello12332123123123123123123123'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['MAIL_SERVER'] = "smtp.gmail.com"
-app.config['MAIL_PORT'] = 587
+app.config['MAIL_SERVER'] = os.getenv('MAIL_SERVER')
+app.config['MAIL_PORT'] = os.getenv('MAIL_PORT')
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = "siriuslych@gmail.com"
-app.config['MAIL_PASSWORD'] = "ojwp bocl jhqg ychk"
-app.config['MAIL_DEFAULT_SENDER'] = "Age of Fall"
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
+app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')
 db.init_app(app)
 
 mail = Mail(app)
